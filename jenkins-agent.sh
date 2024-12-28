@@ -11,6 +11,7 @@ xfs_growfs /home
 xfs_growfs /var/tmp
 xfs_growfs /var
 
+#java
 yum install java-17-openjdk -y
 yum install -y yum-utils
 yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
@@ -32,3 +33,6 @@ usermod -aG docker ec2-user
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
 ./get_helm.sh
+
+#mysql
+dnf install mysql -y

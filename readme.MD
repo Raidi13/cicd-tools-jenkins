@@ -4,3 +4,5 @@ Plugins:
 * Pipeline Utility Steps
 * AWS Credentials
 * AWS Steps
+* Ansi colours
+* Rebuild
