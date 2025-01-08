@@ -22,7 +22,6 @@ module "jenkins" {
   ]
 }
 
-
 module "jenkins_agent" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 

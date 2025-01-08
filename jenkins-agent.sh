@@ -13,6 +13,7 @@ xfs_growfs /var
 
 #java
 yum install java-17-openjdk -y
+#terraform
 yum install -y yum-utils
 yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 yum -y install terraform
@@ -34,3 +35,8 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 chmod 700 get_helm.sh
 ./get_helm.sh
 
+# Maven for Java projects
+dnf install maven -y
+
+# Python for python projects
+dnf install python3.11 gcc python3-devel -y
