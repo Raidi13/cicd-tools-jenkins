@@ -49,3 +49,18 @@ dnf install maven -y
 
 # Python for python projects
 dnf install python3.11 gcc python3-devel -y
+
+# # Install ArgoCD CLI
+# curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+# chmod +x /usr/local/bin/argocd
+
+# # Deploy ArgoCD in Kubernetes (if a cluster is available)
+# kubectl create namespace argocd
+# kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+# # Expose ArgoCD Server (Optional - using LoadBalancer or NodePort)
+# kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+
+# # Retrieve Initial Admin Password
+# echo "ArgoCD Admin Password:"
+# kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d && echo
