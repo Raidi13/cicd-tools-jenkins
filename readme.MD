@@ -6,7 +6,10 @@ Plugins:
 * AWS Steps
 * Ansi colours
 * Rebuild
-
+* ldap
+* rolebased
+* git
+* github wedhook trigger
 
 #sonars plugins
 
